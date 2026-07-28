@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: loop-engine
+  main:
+    web-application-type: none
+    banner-mode: off
+    log-startup-info: false
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:demo-key-not-used}
+      chat:
+        options:
+          model: ${OPENAI_MODEL:gpt-5-mini}
+          temperature: 0.2
+
+demo:
+  ai:
+    enabled: ${AI_ENABLED:false}
+
+logging:
+  level:
+    root: WARN

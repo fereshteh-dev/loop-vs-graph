@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: loop-vs-graph-comparison
+  main:
+    web-application-type: none
+    banner-mode: off
+    log-startup-info: false
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:comparison-showcase-key-not-used}
+
+logging:
+  level:
+    root: WARN
+
+demo:
+  animation:
+    delay: ${DEMO_DELAY:1600ms}
+    viewport-lines: ${DEMO_VIEWPORT_LINES:24}

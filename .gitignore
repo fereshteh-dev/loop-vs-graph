@@ -1,0 +1,121 @@
+# -----------------------------------------------------------------------------
+# Build output and generated files
+# -----------------------------------------------------------------------------
+target/
+**/target/
+out/
+build/
+.flattened-pom.xml
+dependency-reduced-pom.xml
+*.class
+*.jar.original
+
+# -----------------------------------------------------------------------------
+# IDEs and editors
+# -----------------------------------------------------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.factorypath
+.vscode/
+*.code-workspace
+
+# IntelliJ local inspection and SonarLint state
+.sonarlint/
+**/.sonarlint/
+.idea/sonarlint/
+.idea/sonarlint.xml
+
+# -----------------------------------------------------------------------------
+# SonarQube / SonarScanner
+# -----------------------------------------------------------------------------
+.scannerwork/
+**/.scannerwork/
+.sonar/
+**/.sonar/
+sonar-report.json
+sonar-scanner.log
+
+# -----------------------------------------------------------------------------
+# AI agents and local assistant metadata
+# -----------------------------------------------------------------------------
+.agents/
+**/.agents/
+.agent/
+**/.agent/
+.codex/
+**/.codex/
+.claude/
+**/.claude/
+.cursor/
+**/.cursor/
+AGENTS.local.md
+
+# -----------------------------------------------------------------------------
+# Secrets, credentials, and machine-local configuration
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+
+application-local.yml
+application-local.yaml
+application-local.properties
+**/application-local.yml
+**/application-local.yaml
+**/application-local.properties
+
+application-secret.yml
+application-secret.yaml
+application-secrets.yml
+application-secrets.yaml
+**/application-secret*.yml
+**/application-secret*.yaml
+**/application-secret*.properties
+
+secrets/
+**/secrets/
+credentials/
+**/credentials/
+credentials.json
+service-account*.json
+
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+*.asc
+
+# Local Maven and deployment credentials
+settings.xml
+.mvn/settings.xml
+
+# -----------------------------------------------------------------------------
+# Logs, diagnostics, and runtime state
+# -----------------------------------------------------------------------------
+*.log
+logs/
+*.pid
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# -----------------------------------------------------------------------------
+# Operating-system files
+# -----------------------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
